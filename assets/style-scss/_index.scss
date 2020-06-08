@@ -1,0 +1,112 @@
+
+.sidebar{
+    width: 296px;
+    background-color: #EDF4EE;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    .h1{
+        margin-top: 40px;
+        margin-bottom: 42px;
+    }
+    .menu-list{
+        font-size: 16;
+        font-weight: bold;
+    }
+    a{
+    text-decoration: none;
+    color: #121212;
+      &:hover{
+          color: #2A8356;
+      }
+    }
+}
+
+.media{
+  padding-left: 32px;
+  margin-bottom: 32px;
+  img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center;
+    }
+}
+
+.wrap{
+  margin-left: 296px;
+  .navbar{
+    margin-top: 32px;
+  }
+    h2{
+    padding-right: 46px;
+    font-size: $font-size-lg;
+    }
+}
+
+.topRight{
+  .material-icons{
+    padding-left: 26px;
+  }
+}
+
+.content{
+  padding-left: 32px;
+  padding-right: 32px;
+  border-color: $b-color;
+  span{
+      font-size: 12px;
+    }
+    .text{
+      color: #0000009A;
+    }
+  h2{
+    font-size: $font-size-base;
+  }
+  .list-group-item{
+    color: #000;
+    
+    .text-icon{
+      color: #2A8356;
+    }
+  }
+}   
+
+
+
+.card-header{
+      .text-sm{
+        font-size: 12px;
+      }
+    }
+
+.card-body{
+  span{
+      font-size: 12px;
+    }
+    code{
+      background-color: #CDDDCD;
+      color: $success;
+    }
+    p{
+      font-size: $font-size-base;
+      line-height: 1.5;
+      font-family: 'Regular';
+    }
+    .btn{
+      width: 176px;
+    }
+}
+
+hr{
+  border-color: #CDDDCD;
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+    outline: none;
+    border-style: none;
+}
+

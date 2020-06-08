@@ -1,0 +1,33 @@
+*,*::before,*::after{
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: Lato,;
+}
+
+h1,h2,h3,p{
+    font-weight: bold;
+}
+
+h1{
+    font-size: $font-size-lg;
+}
+
+.mediaText{
+    font-size: $font-size-sm;
+    color: #0000009A;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+p{
+    margin: 0;
+}
+
+.text-icon{
+    color: #2A8356;
+}
+
