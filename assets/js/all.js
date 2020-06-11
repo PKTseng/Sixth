@@ -19,4 +19,7 @@ var swiper = new Swiper(".swiper-container", {
     disableOnInteraction: false
   }
 });
+AOS.init({
+  once: true
+});
 //# sourceMappingURL=all.js.map

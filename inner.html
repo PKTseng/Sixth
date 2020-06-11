@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home.html</title>
+    <title>inner.html</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -27,7 +27,7 @@
           <i class="material-icons">dehaze</i>
         </button>
         <!-- 右邊選單 -->
-        <div class="collapse navbar-collapse light">
+        <div class="collapse navbar-collapse dark">
           <ul class="navbar-nav ml-auto navbar-light">
             <li class="nav-item">
               <a class="nav-link" href="page.html">Product </a>
@@ -48,116 +48,70 @@
       </nav>
     </section>
 
-    <!-- banner圖 -->
-<section class="container-fluid main mb-5 position-relative">
-    <!-- 圖靠右 -->
-    <div class="row justify-content-end h-100">
-      <div class="col-md-6 bg-cover banner"></div>
-      <!-- 左邊內容 -->
-      <div class="container">
-        <div class="row align-items-center h-100">
-          <div class="col-6">
-            <h1 class="mb-4 font-weight-bold text-md-dark logoTitle">Enjoy Your<br>Minimalist Lifestyle.</h1>
-            <h3 class="text-secondary mb-5">
-                The best crafts in Taiwan. Get your free 
-                <br>
-                shipping on the first order.
-            </h3>
-            <a href="#" class="btn btn-success" type="button">Shop now</a>
+    
+<!-- 產品頁開始 -->
+<section class="container">
+  <div class="row flex-nowrap align-items-center">
+    <!-- 左大圖 -->
+    <div class="col-md-8 productImg bg-cover" data-aos="fade-right"></div>
+    <!-- 右邊購物選項 -->
+    <div class="col-md-5 col-12 content align-items-center p-4" data-aos="fade-left">
+        <p class="text-secondary">Home / Product / Cup</p>
+        <h1 class="font-weight-bold">Tatami Cup</h1>
+        <div class="text-right">
+          <del>NT$1,200</del>
+          <h3 class="font-weight-bold">NT$1,080</h3>
+        </div>
+
+        <!-- 購買數項 -->
+        <div class="row flex-nowrap no-gutters">
+          <div class="number d-flex justify-content-around align-items-center">
+            <button class="btn">
+            <i class="material-icons">remove</i>
+          </button>
+          <!-- <input type="number" class="border-0" value="1"> -->
+          <input type="number" value="1" class="text-center border-0">
+          <button class="btn">
+            <i class="material-icons">add</i>
+          </button>
+          </div>
+          <div class="col-8">
+            <button class="btn btn-success p-3 btn-block">
+            Add to cart
+          </button>
           </div>
         </div>
-      </div>
+        <!-- 購買數項 -->
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 中間三章介紹內容 -->
-  <ul class="container">
-<!-- 第一個內容 -->
-      <li class="row align-items-center mb-5">
-        <div class="col-md-6 col-12 col-lg-6"data-aos="fade-right" >
-          <img src="./assets/images/photo1.jpg" alt="" class="img-fluid" data-aos="fade-right">
-        </div>
-        <div class="col-md-6 col-12 col-lg-6 justify-content-center" data-aos="fade-left">
-          <div class="row d-flex flex-column align-items-center">
-            <div class="text-left">
-              <h3 class="font-weight-bold mb-3">Special Clays</h3>
-                <p class="text-secondary">A general body formulation for contemporary 
-                  <br>
-                  earthenware is 25% kaolin, 25% ball clay, 35% 
-                  <br>
-                  quartz and 15% feldspar.</p>
-                  <p class="font-weight-bold green">Learn More</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- 第二個內容 -->
-      <li class="row align-items-center mb-5">
-        <div class="col-md-6 col-12 col-lg-6" data-aos="fade-up-left">
-          <img src="./assets/images/photo2.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6 col-12 col-lg-6">
-          <div class="row d-flex flex-column align-items-center"  data-aos="fade-up-right">
-            <div class="text-right">
-              <h3 class="font-weight-bold mb-3">Less is more</h3>
-              <p class="text-secondary">
-                Trimming pottery can transform a weighty Earth-
-                <br>
-                bound pot into one that is a pleasure to hold, look
-                <br>
-                at, and use.</p>
-                <p class="font-weight-bold green">Learn More</p>
-            </div>
-          </div>
-      </li>
-      <!-- 第三個內容 -->
-      <li class="row align-items-center" data-aos="zoom-out-up">
-        <div class="col-md-6 col-12 col-lg-6 ">
-          <img src="./assets/images/photo3.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6 col-12 col-lg-6">
-          <div class="row d-flex flex-column align-items-center">
-            <div class="text-left">
-              <h3 class="font-weight-bold mb-3">Marvelous Detail</h3>
-              <p>In Craftsman, the art director, working with
-                <br>
-                marketers, develops or creates an idea of a new
-                <br>
-                creation.</p>
-                <p class="font-weight-bold green">Learn More</p>
-            </div>
-          </div>
-      </li>
-
-
-
-
+<!-- 產品描述 -->
+<section class="container mt-5" data-aos="fade-up" data-aos-duration="1500">
+  <div class="row">
+    <div class="col-md-5 col-12 mb-md-0 p-0">
+      <p class="description">
+        This beautiful light grey cup comes from Taiwan. 
+        
+        Add some minimalist scenes to your lifetime and 
+        
+        use this cup for tea, coffee, dessert, or to place 
+        
+        small items as a dish tray.</p>
+    </div>
+    <ul class="col-md-3 standard">
+      <li>Made in Taiwan</li>
+      <li>8 x 8 x 6 cm</li>
+      <li>Dishwasher and Microwave-safe</li>
     </ul>
+  </div>
+</section>
 
-    <!-- 帥哥臉 -->
-    <section class="bigPhoto">
-      <div class="container h-100">
-        <div class="row justify-content-between align-items-center h-100">
-          <div class="col-9" data-aos="fade-right">
-            <h2 class="text-white">"I want to make the life
-            <br>
-            more simple by crafts."</h2>
-          </div>
-          <div class="col-3" data-aos="fade-left">
-            <p class="text-secondary">Art Director</p>
-            <h3 class="text-white">hsiao-Ming Chen</h3>
-              <small class="mr-3 font-weight-bold text-success">Instagram</small>
-              <small class=" font-weight-bold text-success">Twitter</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-<!-- Swiper -->
-<div class="container mt-5">
+<!-- 其他選項 -->
+<section class="other container mt-5" data-aos="fade-left">
+  <h3 class="font-weight-bold">You might also like…</h3>
+  <div class="container mt-5">
   <div class="swiper-container">
       <div class="swiper-wrapper">
         <!-- 第一張 -->
@@ -246,9 +200,7 @@
     </div>
   </div>
 </div>
-
-
-  
+</section>
 
     <section class="footer mt-5 bg-cover">
       <div class="container h-100">
