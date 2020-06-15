@@ -10987,6 +10987,13 @@ html, body {
   color: #fff !important;
 }
 
+.light li:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .main {
   height: 800px;
 }
@@ -10998,13 +11005,6 @@ html, body {
   top: 0;
   bottom: 0;
   background-image: url("https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-}
-
-li:nth-child(2) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .bigPhoto {
@@ -11155,6 +11155,40 @@ del {
 
 .standard {
   color: #0000009A;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  right: 0;
+  margin: auto;
+  width: 540px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.bigClose {
+  font-size: 48px;
+}
+
+.mediaImg1 {
+  background-repeat: no-repeat;
+  width: 122px;
+  height: 122px;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,7 +1,12 @@
 // banner圖
 .light{
+    // 選單顏色為白色
     .navbar-light li a{
         color: #fff !important;
+    }
+    // 中間三張圖，第二個內容反過來
+    li:nth-child(2){
+        flex-direction: row-reverse;
     }
 }
 .main{  
@@ -16,10 +21,7 @@
     }
 }
 
-// 中間三張圖，第二個內容反過來
-li:nth-child(2){
-    flex-direction: row-reverse;
-}
+
 
 // 帥哥臉 
 .bigPhoto{

@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
@@ -75,8 +76,9 @@
             <i class="material-icons">add</i>
           </button>
           </div>
+          <!-- Button cart modal -->
           <div class="col-8">
-            <button class="btn btn-success p-3 btn-block">
+          <button type="button" class="btn btn-success btn-block p-3" data-toggle="modal" data-target="#cartModal">
             Add to cart
           </button>
           </div>
@@ -201,6 +203,105 @@
   </div>
 </div>
 </section>
+
+<!-- model 欄位 -->
+
+<!-- Modal -->
+
+<div class="modal right fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header align-items-center">
+        
+        <h1 class="font-weight-bold modal-title mr-auto" id="cartModalLabel">Cart List
+          <sup class="green">3</sup></h1>
+          
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons bigClose" aria-hidden="true">clear</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- 產品一 -->
+        <div class="media bg-light">
+          <img src="./assets/images/img-1.jpg" class="mediaImg1 bg-cover" alt="...">
+        <!-- 產品一內容 -->
+          <div class="media-body p-3">
+            <div class="row justify-content-between px-3">
+                <p class="font-weight-bold m-0 ">Tatami Cup </p>
+              <i class="material-icons mr-0">clear</i>
+            </div>
+            <p class="text-secondary">NT$1,080
+              <del>NT$1,200</del>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <button class="btn">
+                  <i class="material-icons">remove</i>
+                </button>
+                <span class="pb-2">1</span>
+                <button class="btn">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+              <p class="font-weight-bold m-0">NT$1,080</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 產品二 -->
+        <div class="media bg-light mt-2">
+          <img src="./assets/images/img-4.jpg" class="mediaImg1 bg-cover" alt="...">
+        <!-- 產品二內容 -->
+          <div class="media-body p-3">
+            <div class="row justify-content-between px-3">
+                <p class="font-weight-bold m-0">Baifan Bowl</p>
+              <i class="material-icons mr-0">clear</i>
+            </div>
+            <p class="text-secondary">NT$1,800</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <button class="btn">
+                  <i class="material-icons">remove</i>
+                </button>
+                <span class="pb-2">2</span>
+                <button class="btn">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+              <p class="font-weight-bold m-0">NT$3,600</p>
+            </div>
+          </div>
+        </div>
+        <!-- Total -->
+        <div class="container-fluid p-0">
+          <div class="row justify-content-end">
+            <div class="col-9">
+              <ul class="mt-4">
+                <li class="d-flex justify-content-between">
+                  <p class="text-secondary">Subtotal</p>
+                  <p>NT$4,680</p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p class="text-secondary">Shipping</p>
+                  <p>NT$80</p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <h3 class="font-weight-bold">Total</h3>
+                  <h3 class="font-weight-bold">NT$4,760</h3>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-success btn-block p-3" data-dismiss="modal">Checkout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <section class="footer mt-5 bg-cover">
       <div class="container h-100">
