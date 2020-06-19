@@ -17,6 +17,20 @@ var swiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    996: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
   }
 });
 AOS.init({

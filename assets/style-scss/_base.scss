@@ -4,12 +4,8 @@
 
 body{
     font-family: Roboto, sans-serif;
-    text-transform: capitalize !important;
 }
 
-.container-fluid{
-    max-width: 1280px;
-}
 
 .h1{
     font-weight: bold;
@@ -25,11 +21,37 @@ h3{
     background-size: cover;
 }
 
-// .text-md-dark{
-//     color: #000;
-// }
+.green{
+    color: #0E8A00;
+}
 
-// .text-white{
-//     color: #fff !important;
-// }
+.font-weight-bold {
+    font-weight: 700 ;
+}
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+ul,ol{
+    list-style:none;
+}
+
+a{
+    color: #000;
+    text-decoration: none !important;
+    :hover{
+        color: #0E8A00;
+    }
+}
+
+@mixin pad {
+    @media (max-width:996px) {
+        @content
+    }
+}
+
+.text-md-dark{
+    color: #000;
+}

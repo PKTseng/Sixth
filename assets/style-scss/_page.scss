@@ -1,3 +1,11 @@
+.dark{
+        // 選單顏色為白色
+    a{
+        color: #000 !important;
+    }
+}
+
+// 選單
 .menuSize{
     background-color: #F2F2F2;
     h3{
@@ -18,7 +26,7 @@ del{
     background-image: url('../images/img-1.jpg');
     width: 100%;
     height: 350px;
-    
+    order: 1;
 }
 
 .productImg2{
@@ -37,6 +45,7 @@ del{
     background-image: url('../images/photo10.jpg');
     width: 100%;
     height: 480px;
+    order: 2;
 }
 
 .productImg5{
@@ -68,3 +77,15 @@ del{
     width: 100%;
     height: 350px;
 }
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 2;
+    }
+}
+
+// .card-columns {
+//     @include media-breakpoint-only(md) {
+//         column-count: 2;
+//     }
+// }

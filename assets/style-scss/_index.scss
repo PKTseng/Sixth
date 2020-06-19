@@ -1,14 +1,11 @@
 // banner圖
 .light{
     // 選單顏色為白色
-    .navbar-light li a{
-        color: #fff !important;
-    }
-    // 中間三張圖，第二個內容反過來
-    li:nth-child(2){
-        flex-direction: row-reverse;
+        a{
+            color: #fff !important;
     }
 }
+
 .main{  
     height: 800px;
     .banner{
@@ -21,6 +18,27 @@
     }
 }
 
+@media (max-width:768px) {
+    .main{
+        h3,h1{
+            text-align: center;
+            }
+            a{
+                display: block;
+            }
+    }
+    // 中間三張圖中，第二個內容上下反過來
+    li:nth-child(2){
+        flex-direction: column-reverse;
+    }
+}
+
+// RWD視窗中間三張內容離照片距離
+@media (max-width:996px){
+    .imgContent{
+        margin-top: 20px;
+    }
+}
 
 
 // 帥哥臉 
@@ -29,6 +47,8 @@
     background-position: center center;
     background-size: cover;
     height: 400px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-repeat: no-repeat;
 }
 

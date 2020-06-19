@@ -1,19 +1,22 @@
 .light{
-    .navbar-light li a{
-        color: #000 !important;
-    }
+    // 選單顏色為白色
+        a{
+            color: #fff !important;
+        }
 }
 
 .logo{
     font-family: 'Raleway', sans-serif;
 
 } 
-    .logoTitle{
-        color: #fff;
-    }
 
-@media (min-width: 768px){
-    .text-md-dark{
+.logoTitle{
+    color: #fff;
+    font-style: italic;
+}
+
+@media (min-width: 996px){
+    .text-lg-dark{
         color: #121212 !important;
     }
 }
@@ -24,7 +27,11 @@
 
 .menu{
     z-index: 1;
+    .topMenu{
+        display: none;
+    }
 }
+
 
 .navbar-light{
     li{

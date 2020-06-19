@@ -18,36 +18,40 @@
   </head>
 
   <body>
-    <section class="container menu">
-      <!-- 左邊標題 -->
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand font-weight-bold logo" href="index.html">
-          <h2 class="font-weight-bold text-md-dark logoTitle">Craftsman</h2>
-          </a>
-        <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="material-icons">dehaze</i>
-        </button>
-        <!-- 右邊選單 -->
-        <div class="collapse navbar-collapse dark">
-          <ul class="navbar-nav ml-auto navbar-light">
-            <li class="nav-item">
-              <a class="nav-link" href="page.html">Product </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-3" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-3" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-4" href="#">
-                <i class="material-icons">shopping_cart</i>
-              </a>
-            </li>
-          </ul>
+    <section class="container menu mt-4">
+      <div class="row mt-4 align-items-center">
+        <!-- 漢堡選單 -->
+        <div class="col-3 d-lg-none d-block dark">
+          <span class="material-icons dark" >dehaze</span>
         </div>
-      </nav>
+        <!-- 左邊標題 -->
+        <div class="col-6 col-lg-2 d-flex justify-content-lg-start justify-content-center align-items-center">
+          <a href="index.html">
+            <h2 class="font-weight-bold text-lg-dark dark">Craftsman</h2>
+          </a>
+        </div>
+        <!-- 右邊選單 -->
+        <div class="col-3 col-lg-10 d-flex justify-content-end dark">
+          <div class="d-flex align-items-center">
+            <div class="mx-3">
+              <a href="page.html" class="  align-items-center topMenu d-lg-block">Product</a>
+            </div>
+            <div class="mx-3">
+              <a href="page.html" class="  align-items-center topMenu d-lg-block">Blog</a>
+            </div>
+            <div class="mx-3">
+              <a href="page.html" class="  align-items-center topMenu d-lg-block">Contact</a>
+            </div>
+          </div>
+          <div class="mx-3">
+              <a href="#" data-toggle="modal" data-target="#cartModal" type="button">
+                <span class="material-icons" >shopping_cart</span>
+              </a>
+            </div>
+        </div>
+      </div>
     </section>
+
 
     
 <!-- 產品頁開始 -->
@@ -302,14 +306,15 @@
 </div>
 
 
-
     <section class="footer mt-5 bg-cover">
       <div class="container h-100">
+        <!-- 標題 -->
         <div class="row align-items-center h-100">
           <div class="col-lg-6" data-aos="fade-up">
             <h1 class="h1 text-white">Subscribe for news 
               <br>
               and special offers!</h1>
+              <!-- 輸入 e-mail -->
             <div class="row mt-5">
               <div class="col-10">
                 <div class="input-group">
@@ -325,12 +330,12 @@
       </div>
       <div class="bg-dark py-3">
         <div class="container h-100">
-          <div class="row h-100 justify-content-between">
-            <div class="col-lg-6 d-flex align-items-center">
+          <div class="row h-100 justify-content-lg-between ">
+            <div class="col-12 col-lg-6 d-flex align-items-center ">
               <h3 class="logo text-white mr-3">Craftsman</h3>
-              <small class="text-gray">© 2020. All Rights Reserved.</small>
+              <small class="text-gray d-none d-lg-block">© 2020. All Rights Reserved.</small>
             </div>
-            <ul class="nav justify-content-end ">
+            <ul class="nav justify-content-end flex-column flex-lg-row">
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Purchase Policy</a>
               </li>
@@ -340,12 +345,109 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Terms & Conditions</a>
               </li>
+              <li class="nav-item d-lg-none mt-4">
+                <small class="text-gray">© 2020. All Rights Reserved.</small>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
     
+<!-- Modal -->
+<div class="modal right fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header align-items-center">
+        
+        <h1 class="font-weight-bold modal-title mr-auto" id="cartModalLabel">Cart List
+          <sup class="green">3</sup></h1>
+          
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons bigClose" aria-hidden="true">clear</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- 產品一 -->
+        <div class="media bg-light">
+          <img src="./assets/images/img-1.jpg" class="mediaImg1 bg-cover" alt="...">
+        <!-- 產品一內容 -->
+          <div class="media-body p-3">
+            <div class="row justify-content-between px-3">
+                <p class="font-weight-bold m-0 ">Tatami Cup </p>
+              <i class="material-icons mr-0">clear</i>
+            </div>
+            <p class="text-secondary">NT$1,080
+              <del>NT$1,200</del>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <button class="btn">
+                  <i class="material-icons">remove</i>
+                </button>
+                <span class="pb-2">1</span>
+                <button class="btn">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+              <p class="font-weight-bold m-0">NT$1,080</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 產品二 -->
+        <div class="media bg-light mt-2">
+          <img src="./assets/images/img-4.jpg" class="mediaImg1 bg-cover" alt="...">
+        <!-- 產品二內容 -->
+          <div class="media-body p-3">
+            <div class="row justify-content-between px-3">
+                <p class="font-weight-bold m-0">Baifan Bowl</p>
+              <i class="material-icons mr-0">clear</i>
+            </div>
+            <p class="text-secondary">NT$1,800</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <button class="btn">
+                  <i class="material-icons">remove</i>
+                </button>
+                <span class="pb-2">2</span>
+                <button class="btn">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+              <p class="font-weight-bold m-0">NT$3,600</p>
+            </div>
+          </div>
+        </div>
+        <!-- Total -->
+        <div class="container-fluid p-0">
+          <div class="row justify-content-end">
+            <div class="col-9">
+              <ul class="mt-4">
+                <li class="d-flex justify-content-between">
+                  <p class="text-secondary">Subtotal</p>
+                  <p>NT$4,680</p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p class="text-secondary">Shipping</p>
+                  <p>NT$80</p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <h3 class="font-weight-bold">Total</h3>
+                  <h3 class="font-weight-bold">NT$4,760</h3>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-success btn-block p-3" data-dismiss="modal">Checkout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
