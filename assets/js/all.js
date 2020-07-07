@@ -33,7 +33,4 @@ var swiper = new Swiper(".swiper-container", {
     }
   }
 });
-AOS.init({
-  once: true
-});
 //# sourceMappingURL=all.js.map
