@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>inner.html</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+      ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&   family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   </head>
 
   <body>
     <section class="container menu mt-4">
-      <div class="row mt-4 align-items-center">
+      <div class="row mt-4 align-items-center justify-content-between">
         <!-- 漢堡選單 -->
-        <div class="col-3 d-lg-none d-block dark">
-          <span class="material-icons dark" >dehaze</span>
+        <div class="dark">
+          <div class="d-lg-none humberMenu ">
+            <span class="material-icons " >dehaze</span>
+          </div>
         </div>
+        
         <!-- 左邊標題 -->
-        <div class="col-6 col-lg-2 d-flex justify-content-lg-start justify-content-center align-items-center">
+        <div class=" logo dark">
           <a href="index.html">
-            <h2 class="font-weight-bold text-lg-dark dark">Craftsman</h2>
+            <h2 class="font-weight-bold logoTxt ">Craftsman
+            </h2>
           </a>
         </div>
         <!-- 右邊選單 -->
-        <div class="col-3 col-lg-10 d-flex justify-content-end dark">
+        <div class=" d-flex justify-content-end dark">
           <div class="d-flex align-items-center">
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Product</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Product</a>
             </div>
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Blog</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Blog</a>
             </div>
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Contact</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Contact</a>
             </div>
           </div>
           <div class="mx-3">
@@ -310,7 +312,7 @@
       <div class="container h-100">
         <!-- 標題 -->
         <div class="row align-items-center h-100">
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6">
             <h1 class="h1 text-white">Subscribe for news 
               <br>
               and special offers!</h1>
@@ -332,7 +334,7 @@
         <div class="container h-100">
           <div class="row h-100 justify-content-lg-between ">
             <div class="col-12 col-lg-6 d-flex align-items-center ">
-              <h3 class="logo text-white mr-3">Craftsman</h3>
+              <h3 class="logoFooter mr-3">Craftsman</h3>
               <small class="text-gray d-none d-lg-block">© 2020. All Rights Reserved.</small>
             </div>
             <ul class="nav justify-content-end flex-column flex-lg-row">
@@ -452,9 +454,6 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-  </script>
     <script src="./assets/js/all.js"></script>
   </body>
 

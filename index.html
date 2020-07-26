@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home.html</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+      ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&   family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   </head>
 
   <body>
     <section class="container menu mt-4">
-      <div class="row mt-4 align-items-center">
+      <div class="row mt-4 align-items-center justify-content-between">
         <!-- 漢堡選單 -->
-        <div class="col-3 d-lg-none d-block light">
-          <span class="material-icons light" >dehaze</span>
+        <div class="light">
+          <div class="d-lg-none humberMenu ">
+            <span class="material-icons " >dehaze</span>
+          </div>
         </div>
+        
         <!-- 左邊標題 -->
-        <div class="col-6 col-lg-2 d-flex justify-content-lg-start justify-content-center align-items-center">
+        <div class=" logo light">
           <a href="index.html">
-            <h2 class="font-weight-bold text-lg-dark light">Craftsman</h2>
+            <h2 class="font-weight-bold logoTxt ">Craftsman
+            </h2>
           </a>
         </div>
         <!-- 右邊選單 -->
-        <div class="col-3 col-lg-10 d-flex justify-content-end light">
+        <div class=" d-flex justify-content-end light">
           <div class="d-flex align-items-center">
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Product</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Product</a>
             </div>
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Blog</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Blog</a>
             </div>
             <div class="mx-3">
-              <a href="page.html" class="  align-items-center topMenu d-lg-block">Contact</a>
+              <a href="page.html" class="  align-items-center d-none d-lg-block">Contact</a>
             </div>
           </div>
           <div class="mx-3">
@@ -59,13 +61,13 @@
     <div class="container h-100">
       <div class="row align-items-center h-100">
         <div class="col-12 col-lg-5">
-          <h1 class="mb-4 font-weight-bold text-lg-dark logoTitle">Enjoy Your<br>Minimalist Lifestyle.</h1>
+          <h1 class="mb-4 font-weight-bold text-lg-dark logoTxt">Enjoy Your<br>Minimalist Lifestyle.</h1>
           <h3 class="text-secondary mb-5">
               The best crafts in Taiwan. Get your free 
               <br>
               shipping on the first order.
           </h3>
-          <a href="#" class="btn btn-success" type="button">Shop now</a>
+          <a href="page.html" class="btn btn-success" type="button">Shop now</a>
         </div>
       </div>
     </div>
@@ -100,8 +102,8 @@
     <!-- 第二個內容 -->
     <li class="row align-items-center align-items-lg-center mb-5">
       <div class=" col-12 col-lg-6 col-md-6">
-        <div class="row d-flex flex-column align-items-center"  data-aos="fade-up-right">
-          <div class="text-right imgContent">
+        <div class="row d-flex flex-column align-items-center">
+          <div class="imgContent">
             <h3 class="font-weight-bold mb-3">Less is more</h3>
             <p class="text-secondary">
               Trimming pottery can transform a weighty Earth-
@@ -113,12 +115,12 @@
           </div>
         </div>
       </div>
-      <div class=" col-12 col-lg-6 col-md-6" data-aos="fade-up-left">
+      <div class=" col-12 col-lg-6 col-md-6">
         <img src="./assets/images/index-3.jpg" alt="" class="img-fluid">
       </div>
     </li>
     <!-- 第三個內容 -->
-    <li class="row align-items-center" data-aos="zoom-out-up">
+    <li class="row align-items-center">
       <div class=" col-12 col-lg-6 col-md-6 ">
         <img src="./assets/images/index-4.jpg" alt="" class="img-fluid">
       </div>
@@ -142,12 +144,12 @@
   <section class="bigPhoto">
     <div class="container h-100">
       <div class="row justify-content-between align-items-center h-100">
-        <div class="col-12 col-lg-4 pt-4 pt-lg-0" data-aos="fade-right">
+        <div class="col-12 col-lg-4 pt-4 pt-lg-0">
           <h2 class="text-white">"I want to make the life
           <br>
           more simple by crafts."</h2>
         </div>
-        <div class="col-12 col-lg-3" data-aos="fade-left">
+        <div class="col-12 col-lg-3">
           <p class="text-secondary">Art Director</p>
           <h3 class="text-white">hsiao-Ming Chen</h3>
             <small class="mr-3 font-weight-bold text-success">Instagram</small>
@@ -256,7 +258,7 @@
       <div class="container h-100">
         <!-- 標題 -->
         <div class="row align-items-center h-100">
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6">
             <h1 class="h1 text-white">Subscribe for news 
               <br>
               and special offers!</h1>
@@ -278,7 +280,7 @@
         <div class="container h-100">
           <div class="row h-100 justify-content-lg-between ">
             <div class="col-12 col-lg-6 d-flex align-items-center ">
-              <h3 class="logo text-white mr-3">Craftsman</h3>
+              <h3 class="logoFooter mr-3">Craftsman</h3>
               <small class="text-gray d-none d-lg-block">© 2020. All Rights Reserved.</small>
             </div>
             <ul class="nav justify-content-end flex-column flex-lg-row">
@@ -398,9 +400,6 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-  </script>
     <script src="./assets/js/all.js"></script>
   </body>
 
