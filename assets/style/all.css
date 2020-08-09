@@ -10947,38 +10947,135 @@ html, body {
   color: #fff !important;
 }
 
-@media (max-width: 768px) {
-  .humberMenu {
+.light .humberMenu {
+  float: left;
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .light .humberMenu {
+    display: block;
     color: #fff;
   }
 }
 
-.logo {
+.header {
+  margin-top: 16px;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
-.logoTxt {
+.header .logoTxt h2 {
   font-family: 'Raleway', sans-serif;
   color: #121212;
   font-style: italic;
 }
 
-@media (max-width: 768px) {
-  .logoTxt {
+@media (max-width: 960px) {
+  .header .logoTxt h2 {
     color: #fff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -20%;
   }
 }
 
-.menu {
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menuItems a {
+  margin: 0 24px;
+  color: #fff;
+}
+
+.padMenu {
+  -webkit-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -16px;
+  right: 0;
+  left: 0;
+  top: 0px;
+  background-color: #fff;
+  height: 640px;
+}
+
+.padMenu .padMenuIcons {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #000;
   z-index: 1;
+}
+
+.padMenu .humberMenu {
+  color: #000;
+}
+
+hr {
+  background-color: #fff;
+  width: 95%;
+}
+
+.padMenuItems p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #0000009A;
+}
+
+.padMenuItems:hover {
+  cursor: pointer;
+}
+
+.padMenuItems:hover p {
+  color: #0E8A00;
+}
+
+.padMenuShow {
+  max-height: 600px;
+}
+
+@media (max-width: 960px) {
+  .menu .menuList {
+    display: none;
+  }
 }
 
 .navbar-light li {
@@ -11002,10 +11099,6 @@ html, body {
   font-style: italic;
 }
 
-.light a {
-  color: #fff !important;
-}
-
 .main {
   height: 800px;
 }
@@ -11019,17 +11112,28 @@ html, body {
   background-image: url("https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
 }
 
+.main .bannerTitle {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 960px) {
+  .bannerTitle {
+    color: #fff;
+  }
+}
+
 .imgContent {
   text-align: end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .imgContent {
     text-align: start;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .main h3, .main h1 {
     text-align: center;
   }
@@ -11092,20 +11196,40 @@ html, body {
   background-image: url(../images/photo10.jpg);
 }
 
-.dark a {
-  color: #000 !important;
-}
-
-@media (max-width: 768px) {
-  .dark .humberMenu {
-    color: #000;
-  }
-}
-
 .dark .logoTxt {
   font-family: 'Raleway', sans-serif;
   color: #121212;
   font-style: italic;
+}
+
+.dark .header .menuItems a {
+  color: #000;
+}
+
+.dark .humberMenu {
+  float: left;
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .dark .humberMenu {
+    display: block;
+    color: #000;
+  }
+}
+
+.dark .logoTxt h2 {
+  color: #121212;
+}
+
+.dark .menuItems a {
+  color: #000;
+}
+
+@media (max-width: 960px) {
+  .dark .header .humberMenu {
+    color: #000;
+  }
 }
 
 .menuSize {
@@ -11120,8 +11244,20 @@ html, body {
   color: #0E8A00;
 }
 
+@media (max-width: 960px) {
+  .menuSize {
+    display: none;
+  }
+}
+
 del {
   color: #00000062 !important;
+}
+
+@media (max-width: 960px) {
+  .product {
+    margin-top: 10px;
+  }
 }
 
 .productImg1 {

@@ -33,4 +33,10 @@ var swiper = new Swiper(".swiper-container", {
     }
   }
 });
+$(document).ready(function () {
+  $('.humberMenu').on('click', function (e) {
+    e.preventDefault();
+    $('.padMenu').toggleClass('padMenuShow');
+  });
+});
 //# sourceMappingURL=all.js.map
