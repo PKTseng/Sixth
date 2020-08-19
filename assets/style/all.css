@@ -10954,6 +10954,7 @@ html, body {
 
 @media (max-width: 960px) {
   .light .humberMenu {
+    cursor: pointer;
     display: block;
     color: #fff;
   }
@@ -11117,14 +11118,25 @@ hr {
   margin-bottom: 24px;
 }
 
+.main .bannerText {
+  color: #7f8c8d;
+}
+
 @media (max-width: 960px) {
-  .bannerTitle {
+  .main .bannerTitle {
+    color: #fff;
+  }
+  .main .bannerText {
     color: #fff;
   }
 }
 
 .imgContent {
   text-align: end;
+}
+
+.imgContent a {
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -11373,7 +11385,7 @@ del {
   position: fixed;
   right: 0;
   margin: auto;
-  width: 540px;
+  max-width: 540px;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
           transform: translate3d(0%, 0, 0);
